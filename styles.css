@@ -1,13 +1,9 @@
-*{
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-
-}
 
 @font-face {
     font-family: 'Norse Bold';
     src: url(Norse-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
 }
 
 a{
@@ -20,4 +16,44 @@ body{
     padding: 0;
     margin:0;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
+
+#image-sidebar {
+    background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+    opacity: 75%;
+    height: 25%;
+}
+
+#logo{
+    width:15%;
+}
+
+/* this next selector is for nesting items DIRECTLY inside a selector. Will likely be useful for future projects until I try another CSS framework*/
+
+#logo-container > h2 {
+    color:bisque;
+    font-size:5rem;
+    font-family:'Norse-Bold.otf', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+
