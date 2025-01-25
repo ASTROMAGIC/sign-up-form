@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: 'Norse Bold';
-    src: url(Norse-Bold.otf);
+    font-family: 'MyCustomFont';
+    src: url('assets/Norse-Bold.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -12,17 +12,15 @@ a{
 
 body{
     display: flex;
-    justify-content: center;
     padding: 0;
     margin:0;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
 #image-sidebar {
     background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    width: 45%;
+    width: 35%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -55,5 +53,87 @@ body{
     padding-top: 30px;
 }
 
+#image-sidebar > p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
 
+#image-sidebar > p > a {
+    color: white;
+}
 
+label {
+    display:block;
+    text-transform: uppercase;
+    margin: .75rem 0;
+    font-size: 0.8rem;
+}
+
+#form-description {
+    margin: 0; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    background-color: beige;
+    height: 30vh;
+    padding: 60px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    padding: 20px;
+}
+
+.containter {
+    display: flex;
+    gap: 200px;
+
+}
+
+#label-input-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button {
+    width: 200px;
+    padding: 10px 25px 10px 25px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    background-color: #595959;
+    color: rgb(244, 236, 236);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+main > p {
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-top: -10px;
+}
