@@ -20,8 +20,8 @@ body{
 #image-sidebar {
     background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    width: 35%;
     height: 100vh;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,7 +48,7 @@ body{
 #logo-container > h2 {
     color:bisque;
     font-size:5rem;
-    font-family:'Norse-Bold.otf', sans-serif;
+    font-family:'MyCustomFont', sans-serif;
     font-weight: bold;
     padding-top: 30px;
 }
@@ -86,7 +86,7 @@ form {
     padding: 20px;
 }
 
-.containter {
+.container {
     display: flex;
     gap: 200px;
 
@@ -104,7 +104,7 @@ form {
 }
 
 input {
-    width: 150px;
+    width: 200px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 4px;
